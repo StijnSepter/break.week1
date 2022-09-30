@@ -1,0 +1,126 @@
+body{
+    margin: auto;
+    background-color: rgba(219, 199, 175, 0.296);
+    font-family: "Times New Roman", sans-serif; 
+}
+/* times New roman word gebruikt als dat niet mogelijk is word sans-serif gebruikt dit zijn verschilende text */
+
+
+h1{
+    color: red;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+li a{
+    display:inline-block;
+    padding: 12px 16px;
+    background-color:gray;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin: 0 1px 0 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+li:last-child a{
+    background-color: rgb(142, 159, 176);
+}
+
+li a:hover {
+    background-color: rgb(196, 186, 186);
+}
+
+ul{
+    list-style-type: none;
+    overflow:flex;
+    display: inline-block;
+}
+
+.city {
+    /* padding doesn't work here */
+    margin: 15px 0px 0px 30px ;
+    border-radius: 2%;
+    width: 400px;
+    height: 250px;
+}
+
+.container{
+    height: 300px;
+    width: 800px;
+    background:linear-gradient(170deg, rgb(240, 118, 25),rgba(254, 170, 13, 0.146));
+    position: relative;
+}
+
+p{
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+container-item{
+    height: 50px;
+    width: 30px;
+    background:rgb(232, 13, 13);
+}
+
+#submit-button{
+    margin: 20px 10px 50px;
+    padding: 10px 15px 5px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 14, 219);
+    transform: matrix(1,0.15,0.15,1,10,50);
+}
+
+#submit-button:hover{
+    background-color: rgb(109, 109, 243);
+    padding: 10px 15px 5px;
+    transform: translate(50px 30px);
+}
+
+
+#about-me{
+    animation-name: red-to-black;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+} 
+
+@keyframes red-to-black{
+    0%{ background:red;
+    transform: translate(0px, 0px);}
+    50%{background:yellow;
+    transform: translate(10px, 10px);}
+    100%{background:black;
+    transform: translate(50px, 50px);}
+} 
+
+  .circle{
+	border: 10px solid red;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	z-index: 86;
+    margin: 20px;
+    }
+
+.circle.filled {
+	background-color: #666666;
+}
+
+.driehoek{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid red;
+}
